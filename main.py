@@ -10,17 +10,16 @@ tf.keras.mixed_precision.set_global_policy('mixed_float16')
 x_train, x_test = x_train / 255.0, x_test / 255.0
 # Define model
 model = Sequential([
-  Conv2D(32, (3, 3), activation='relu', input_shape=(32, 32, 3)),
+  Conv2D(32, (3, 3), activation='leaky_relu', input_shape=(32, 32, 3)),
   MaxPooling2D((2, 2)),
-  Conv2D(64, (3, 3), activation='relu'),
+  Conv2D(64, (3, 3), activation='leaky_relu'),
   MaxPooling2D((2, 2)),
-  Conv2D(64, (3, 3), activation='relu'),
   Flatten(),
-  Dense(64, activation='relu'),
-  Dense(10, dtype='float32')
+  Dense(64, activation='leaky_relu'),
+  Dense(10, dtype='float32'),
 ])
 # Compile and train model
 model.compile(optimizer='adam',
        loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),
        metrics=['accuracy'])
-model.fit(x_train, y_train, epochs=10)
+model.fit(x_train, y_train, epochs=10, batch_size=10)
