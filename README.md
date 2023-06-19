@@ -1,3 +1,13 @@
 # greenia
 
-### The CIFAR-10 dataset (Canadian Institute For Advanced Research) is a collection of images that are commonly used to train machine learning and computer vision algorithms
+### Batch
+nombre d'échantillons d'entraînement
+
+### Kernel
+filtre de convolution, est une petite matrice de nombres qui est appliquée de manière séquentielle à chaque partie de l'image d'entrée. Il se déplace sur l'image en effectuant des opérations de convolution
+
+### Epoch
+Une époque consiste à passer par tous les lots d'entraînement une fois. Par exemple, si vous avez un ensemble d'entraînement de 1000 exemples et que vous utilisez des lots de 100 exemples, alors une époque correspondra à 10 itérations sur les lots (1000 exemples / 100 exemples par lot = 10 itérations)
+
+### Layer
+ Une couche peut être considérée comme une unité de traitement qui prend des entrées, effectue des opérations sur ces entrées et produit des sorties.
