@@ -23,3 +23,4 @@ model.compile(optimizer='adam',
        loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),
        metrics=['accuracy'])
 model.fit(x_train, y_train, epochs=10, batch_size=10)
+print(model.summary())
