@@ -1,11 +1,10 @@
-# greenia
+# Green IA
 
 # Tensorflow
 TensorFlow est particulièrement adapté au traitement des images dans le domaine de l'apprentissage automatique. Il propose des fonctionnalités spécifiques pour la manipulation et le traitement des données d'images
 
 ## Précision
-Afin d'augmenter la précision j'ai retiré un <strong>layer</strong> redondant, j'ai modifié la fonction d'activation avec une variante de la fonction ReLU
-et réduit la taille du batch (échantillion)
+Afin d'augmenter la précision j'ai retiré un <strong>layer</strong> redondant, j'ai modifié la <strong>fonction d'activation</strong> avec une variante de la fonction ReLU et réduit la taille du <strong>batch</strong> (échantillion)
 
 
 #### Batch
